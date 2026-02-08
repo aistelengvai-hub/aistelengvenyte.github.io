@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. Aiste Lengvenyte — CV</title>
+  <meta name="description" content="Academic CV and research profile of Dr. Aiste Lengvenyte." />
+  <style>
+    :root { --fg:#111; --muted:#555; --bg:#fff; --card:#f6f6f7; --line:#e6e6e8; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 64px; }
+    header { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    h1 { margin:0; font-size: 28px; }
+    .subtitle { margin-top:6px; color:var(--muted); line-height:1.35; }
+    .btns { display:flex; gap:10px; flex-wrap:wrap; }
+    a.btn { display:inline-block; padding:10px 12px; border:1px solid var(--line); border-radius:10px; text-decoration:none; color:var(--fg); background:#fff; }
+    a.btn.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+    .grid { display:grid; grid-template-columns: 1fr; gap:14px; margin-top:18px; }
+    @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr 0.8fr; } }
+    section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 16px 6px; }
+    h2 { margin:0 0 10px; font-size:16px; letter-spacing:.2px; }
+    ul { margin: 0 0 12px 18px; padding:0; }
+    li { margin: 0 0 8px; }
+    .small { color:var(--muted); font-size: 13px; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0 14px; }
+    .pill { font-size: 12px; border:1px solid var(--line); border-radius:999px; padding:6px 10px; background:#fff; }
+    footer { margin-top:18px; color:var(--muted); font-size: 12px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Dr. Aiste Lengvenyte</h1>
+        <div class="subtitle">
+          Psychiatrist & Researcher (Psychoneuroimmunology; Suicidal thoughts and behaviours; Precision psychiatry)<br/>
+          Montpellier, France
+        </div>
+        <div class="row">
+          <span class="pill">CHU Montpellier</span>
+          <span class="pill">INSERM / Univ. Montpellier</span>
+          <span class="pill">ECNP Early Career Academy</span>
+        </div>
+      </div>
+
+      <div class="btns">
+        <!-- Replace links -->
+        <a class="btn primary" href="YOUR_CV_PDF_URL_HERE" target="_blank" rel="noreferrer">Download CV (PDF)</a>
+        <a class="btn" href="YOUR_ORCID_URL_HERE" target="_blank" rel="noreferrer">ORCID</a>
+        <a class="btn" href="YOUR_GOOGLE_SCHOLAR_URL_HERE" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a class="btn" href="mailto:YOUR_EMAIL_HERE">Email</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Research focus</h2>
+        <ul>
+          <li>Immune and vascular signatures of suicidal thoughts and behaviours</li>
+          <li>Depression heterogeneity and biomarker-driven phenotyping</li>
+          <li>Brain–immune interface models and mechanistic translation</li>
+        </ul>
+
+        <h2>Selected publications</h2>
+        <ul>
+          <li><strong>Biological Psychiatry</strong> — Vascular homeostasis and suicidal behaviours (Year)</li>
+          <li><strong>European Neuropsychopharmacology</strong> — (Title) (Year)</li>
+          <li><strong>Brain, Behavior, and Immunity – Health</strong> — (Title) (Year)</li>
+        </ul>
+        <p class="small">Tip: keep this to 5–8 “signal” papers; link to Scholar for the full list.</p>
+
+        <h2>Current projects</h2>
+        <ul>
+          <li>Immune stress-response phenotyping and brain–immune interface models</li>
+          <li>FACE-BD biomarker analyses (n&gt;3000) focused on suicidal outcomes</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Positions</h2>
+        <ul>
+          <li>Praticien hospitalier (probationary year), CHU Montpellier</li>
+          <li>Postdoctoral researcher, INSERM / Univ. Montpellier</li>
+        </ul>
+
+        <h2>Funding & awards</h2>
+        <ul>
+          <li>BBRF Young Investigator Award (2024–2026)</li>
+          <li>ANR-DFG collaboration (submitted/ongoing)</li>
+        </ul>
+
+        <h2>Service</h2>
+        <ul>
+          <li>Chair, ECNP Early Career Academy</li>
+          <li>Journal editor & peer reviewer</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <div class="small">
+          Email: <span class="mono">YOUR_EMAIL_HERE</span><br/>
+          Location: Montpellier, France
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div>Last updated: <span id="d"></span></div>
+      <script>
+        const d = new Date();
+        document.getElementById("d").textContent = d.toISOString().slice(0,10);
+      </script>
+    </footer>
+  </div>
+</body>
+</html>
+Add index.html
